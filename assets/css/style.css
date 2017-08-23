@@ -1,0 +1,9 @@
+html {
+	background-image: url("../images/rockywall.png");
+	background-repeat: repeat repeat;
+}
+
+.crystal-image {
+	width: 150px;
+    height: 150px;
+}
