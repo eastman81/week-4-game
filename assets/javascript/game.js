@@ -48,7 +48,32 @@ $(".crystal-image").on("click", function() {
 
 	if (crystalNumberTotal === numberToMatch) {
 		alert("You Win!");
+		wins++;
 	} else if (crystalNumberTotal > numberToMatch) {
 		alert("You Lose!");
+		losses++;
+	}
+
+	$(".winsAndLosses").text("Wins: " + wins + " Losses: " + losses);
+
+	if (checkForReset()) {
+		resetGame();
 	}
 })
+
+// Reset Function
+function checkForReset() {
+	return (crystalNumberTotal >= numberToMatch)
+}
+
+function resetGame() {
+	crystalNumberTotal = 0;
+
+	// Number to Match
+	var numberToMatchOptions = [19, 50, 100, 120];
+	var incrementNumber = numberToMatchOptions[Math.floor(Math.random() * numberToMatchOptions.length)];
+
+	// Display Number to Match
+	numberToMatch = incrementNumber;
+	$(".number").text("Mine " + numberToMatch + " Crystals to Win!");
+}
