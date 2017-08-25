@@ -1,9 +1,33 @@
-html {
+body {
 	background-image: url("../images/rockywall.png");
 	background-repeat: repeat repeat;
+}
+
+h1 {
+	padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+	margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .crystal-image {
 	width: 150px;
     height: 150px;
+}
+
+.colorTop {
+	background-color: #8ebdff;
+}
+
+.colorP {
+	background-color: #badbff;
+}
+
+.colorInfo {
+	background-color: #a1c1f6;
 }

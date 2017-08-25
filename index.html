@@ -2,34 +2,45 @@
 <html>
 <head>
   <title>Crystal Adventure Clicker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>	
 	<body>
-		<h1>Brace Yourself for a Crystal Adventure!</h1>
-		<h2>Read Below to Learn the Rules:</h2>
-
-		<div class="rules">
-			<p>
-				Your goal is to mine the number of crystals displayed on the screen. Every crystal has an assigned value that changes with each game. You need to mine enough crystals to match the current game's number. If you mine to many, your backback will overfill and you will lose.
-				<br>
-				Click a crystal to display the amount gathered. Again, each stone has a different value. Keep clicking, moving between crystals, to reach the number.
-				<br>
-				Happy mining!
-			</p>
-		</div>
-
-		<div class="info">
-			<div class="number"></div>
-			<div class="score"></div>
-			<div class="winsAndLosses"></div>
+		<div>
+			<h1 class="col-md-8 col-md-offset-2 text-center colorTop">Brace Yourself for a Crystal Adventure!</h1>
 		</div>
 
 		<br>
 
-		<div class="crystalDiv"></div>
-		<div class="reset"></div>	
+		<div class="rules row">
+			<div class="col-md-6 col-md-offset-3 text-center colorP">
+				<h3>Read Below to Learn the Rules:</h3>
+				<p>
+					Your goal is to mine the number of crystals displayed on the screen. Every crystal has an assigned value that changes with each game. You need to mine enough crystals to match the current game's number. If you mine to many, your backback will overfill and you will lose.
+					<br>
+					Click a crystal to display the amount gathered. Again, each stone has a different value. Keep clicking, moving between crystals, to reach the number.
+					<br>
+					Happy mining!
+				</p>
+			</div>
+		</div>
+		
+		<br>
+
+		<div class="info row">
+			<div class="number col-md-4 col-md-offset-4 text-center colorInfo"></div>
+			<div class="score col-md-4 col-md-offset-4 text-center colorInfo"></div>
+			<div class="winsAndLosses col-md-4 col-md-offset-4 text-center colorInfo"></div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="crystalDiv col-md-12 text-center colorCrystal"></div>
+		</div>
+		<!-- <div class="reset"></div>	 -->
 		
 		<script type="text/javascript" src="./assets/javascript/game.js"></script>
 
